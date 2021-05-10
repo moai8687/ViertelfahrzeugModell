@@ -2,7 +2,7 @@
 % IRT Regelunsgtechnisches Labor
 % Aufgabe 9 - Vorlage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Test 11
+% Test 11 ??
 close all
 
 % Parameter der Regelstrecke Viertelfahrzeug
@@ -15,13 +15,13 @@ m_u = 0.9;             % Radmasse [kg]
 c_s = 177;             % Federsteifigkeit c_s [N/m]
 c_u = 885;             % Federsteifigkeit c_u [N/m]
 
-% Dämpferkonstanten
-d_s = 0.142*10^3*0.1;  % Dämpferkonstante d_s [Ns/m]
+% DÃ¤mpferkonstanten
+d_s = 0.142*10^3*0.1;  % DÃ¤mpferkonstante d_s [Ns/m]
 
 
-%% Teilübertragungsfunktion aufstellen
+%% TeilÃ¼bertragungsfunktion aufstellen
 
-% Koeffizienten des Zählerpolynoms
+% Koeffizienten des ZÃ¤hlerpolynoms
 b2_u = ...;
 b1_u = ...;
 b0_u = ...;
@@ -45,7 +45,7 @@ sisotool(Gsu);
 %--------------------------------------------
 % G_(z,u)(s)
 
-% Koeffizienten des Zählerpolynoms
+% Koeffizienten des ZÃ¤hlerpolynoms
 b1_z = ;
 b0_z = ;
 
