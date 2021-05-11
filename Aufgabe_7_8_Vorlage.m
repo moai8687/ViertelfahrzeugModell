@@ -2,7 +2,7 @@
 % IRT Regelunsgtechnisches Labor
 % Aufgabe 7 und 8 - Vorlage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-111
+
 close all
 
 % Parameter der Regelstrecke Viertelfahrzeug
