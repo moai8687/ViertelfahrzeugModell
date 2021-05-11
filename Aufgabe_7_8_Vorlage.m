@@ -2,7 +2,7 @@
 % IRT Regelunsgtechnisches Labor
 % Aufgabe 7 und 8 - Vorlage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+111
 close all
 
 % Parameter der Regelstrecke Viertelfahrzeug
@@ -15,13 +15,13 @@ m_u = 0.9;             % Radmasse [kg]
 c_s = 177;             % Federsteifigkeit c_s [N/m]
 c_u = 885;             % Federsteifigkeit c_u [N/m]
 
-% Dämpferkonstanten
-d_s = 0.142*10^3*0.1;  % Dämpferkonstante d_s [Ns/m]
+% DÃ¤mpferkonstanten
+d_s = 0.142*10^3*0.1;  % DÃ¤mpferkonstante d_s [Ns/m]
 
 
-%% Teilübertragungsfunktion aufstellen
+%% TeilÃ¼bertragungsfunktion aufstellen
 
-% Koeffizienten des Zählerpolynoms
+% Koeffizienten des ZÃ¤hlerpolynoms
 b2_u = ...;
 b1_u = ...;
 b0_u = ...;
@@ -43,11 +43,11 @@ Gr_P = 1;
 % Offenen Regelkreis aufstellen
 G0P = Gsu*Gr_P;
 
-% Bode Plot für offenen Regelkreis
+% Bode Plot fÃ¼r offenen Regelkreis
 figure(1)
 bode(G0P);
 
-% Reglerauslegung ergänzen...
+% Reglerauslegung ergÃ¤nzen...
 
 
 
