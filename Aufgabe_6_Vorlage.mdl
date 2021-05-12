@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "14.0"
+    ComputedModelVersion    "14.1"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -127,23 +127,23 @@ Model {
 	  $ObjectID		  5
 	  IsActive		  [1]
 	  IsTabbed		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "407"
 	  Extents		  [1882.0, 855.0]
-	  ZoomFactor		  [1.5]
-	  Offset		  [-30.285714285714334, 58.619047619047706]
-	  SceneRectInView	  [-30.285714285714334, 58.619047619047706, 1254.6666666666667, 570.0]
+	  ZoomFactor		  [1.75]
+	  Offset		  [29.128571428571604, -66.200000000000074]
+	  SceneRectInView	  [29.128571428571604, -66.200000000000074, 1075.4285714285713, 488.57142857142856]
 	}
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [0]
 	  IsTabbed		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "407"
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
 	  Extents		  [1882.0, 855.0]
 	  ZoomFactor		  [1.25]
-	  Offset		  [-185.49999999999989, -155.93333333333337]
-	  SceneRectInView	  [-185.49999999999989, -155.93333333333337, 1505.6, 684.0]
+	  Offset		  [-150.81904761904764, -23.114285714285586]
+	  SceneRectInView	  [-150.81904761904764, -23.114285714285586, 1505.6, 684.0]
 	}
 	PropName		"EditorsInfo"
       }
@@ -152,19 +152,6 @@ Model {
 	Dimension		2
 	Object {
 	  $ObjectID		  7
-	  Type			  "GLUE2:PropertyInspector"
-	  ID			  "Property Inspector"
-	  Visible		  [0]
-	  CreateCallback	  ""
-	  UserData		  ""
-	  Floating		  [0]
-	  DockPosition		  "Right"
-	  Width			  [640]
-	  Height		  [480]
-	  Minimized		  "Unset"
-	}
-	Object {
-	  $ObjectID		  8
 	  Type			  "Simulink:Editor:ReferencedFiles"
 	  ID			  "Referenced Files"
 	  Visible		  [0]
@@ -172,6 +159,19 @@ Model {
 	  UserData		  "{\"filterShowRefModels\":\"true\",\"filterShowRefSubs\":\"true\",\"filterShowOnlyDirtyFiles\":\"false\"}\n"
 	  Floating		  [0]
 	  DockPosition		  "Left"
+	  Width			  [640]
+	  Height		  [480]
+	  Minimized		  "Unset"
+	}
+	Object {
+	  $ObjectID		  8
+	  Type			  "GLUE2:PropertyInspector"
+	  ID			  "Property Inspector"
+	  Visible		  [0]
+	  CreateCallback	  ""
+	  UserData		  ""
+	  Floating		  [0]
+	  DockPosition		  "Right"
 	  Width			  [640]
 	  Height		  [480]
 	  Minimized		  "Unset"
@@ -202,9 +202,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Qigang Wang"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed May 12 12:13:30 2021"
-  RTWModifiedTimeStamp	  542722375
-  ModelVersionFormat	  "%<AutoIncrement:14.0>"
+  LastModifiedDate	  "Wed May 12 12:22:02 2021"
+  RTWModifiedTimeStamp	  542722697
+  ModelVersionFormat	  "%<AutoIncrement:14.1>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -1360,9 +1360,9 @@ Model {
   }
   System {
     Name		    "Aufgabe_6_Vorlage"
-    Location		    [-1928, -8, 8, 1088]
+    Location		    [-8, -8, 1928, 1088]
     SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
-    Open		    on
+    Open		    off
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
     ExecutionDomainType	    "Deduce"
@@ -1376,7 +1376,7 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "150"
+    ZoomFactor		    "125"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "428"
     SimulinkSubDomain	    "Simulink"
@@ -1671,13 +1671,25 @@ Model {
       Ports		      [1]
       Position		      [865, 384, 895, 416]
       ZOrder		      509
-      ScopeSpecificationString "C++SS(StrPVP('Location','[-6, 60, 1914, 1181]'),StrPVP('Open','off'),MxPVP('AxesTitles"
-      "',54,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',57,'struct(''FigureColor'',''[0.5 0.5 0.5]'',"
-      "''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]'',''LineColors'',''[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]''"
-      ",''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5 0.5 0.5 0.5 0.5 0.5]'',''MarkerStyles'',''none|none|none|n"
-      "one|none|none'')'),StrPVP('ShowLegends','off'),StrPVP('YMin','-0.0655'),StrPVP('YMax','0.06552'),StrPVP('DataFor"
-      "mat','StructureWithTime'),StrPVP('LimitDataPoints','off'),StrPVP('ScrollMode','off'),StrPVP('Decimation','1'),St"
-      "rPVP('BlockParamSampleInput','off'))"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingSaveFormat','StructureWithTime','DataLoggingDecimation','1','DataLoggin"
+      "gDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal"
+      "','-0.0655','MaxYLimReal','0.06552','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','off',"
+      "'XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68627450"
+      "9803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.41176"
+      "4705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803"
+      "921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LineProperties"
+      "Cache',{{}},'UserDefinedChannelNames',{{}},'NumLines',3,'LineNames',{{'Viertelfahrzeug/z_s','Viertelfahrzeug/z_u"
+      "','Anregung'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.0655','MaxY"
+      "LimReal','0.06552','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','off','XGrid',true,'YGr"
+      "id',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.6862745"
+      "09803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.1607"
+      "8431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.058823"
+      "5294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'User"
+      "DefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configuratio"
+      "n('Tools','Plot Navigation',true,'OnceAtStop',false),extmgr.Configuration('Tools','Measurements',true,'Version',"
+      "'2021a')),'Version','2021a','Location',[1 77 1921 1079])"
       NumInputPorts	      "1"
       Floating		      off
     }
@@ -1770,7 +1782,7 @@ Model {
 	Name			"Viertelfahrzeug"
 	Location		[-1928, -8, 8, 1088]
 	SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
-	Open			off
+	Open			on
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
 	ExecutionDomainType	"Deduce"
@@ -1784,7 +1796,7 @@ Model {
 	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"125"
+	ZoomFactor		"175"
 	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  Inport
@@ -1945,7 +1957,7 @@ Model {
 	  Ports			  [2, 1]
 	  Position		  [340, 65, 360, 85]
 	  ZOrder		  29
-	  Inputs		  "|++"
+	  Inputs		  "|-+"
 	}
 	Block {
 	  BlockType		  Sum
