@@ -2,7 +2,8 @@
 % IRT Regelunsgtechnisches Labor
 % Aufgabe 7 und 8 - Vorlage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+clc
+clear
 close all
 
 % Parameter der Regelstrecke Viertelfahrzeug
@@ -29,8 +30,8 @@ b0_u = c_u;
 % Koeffizienten des Nennerpolynoms
 a4_u = m_u*m_s;
 a3_u = (m_u+m_s)*d_s;
-a2_u = m_s*(c_s+c_u);
-a1_u = d_s*(c_u-c_s);
+a2_u = m_s*(c_s+c_u)+m_u*c_s;
+a1_u = d_s*c_u;
 a0_u = c_s*c_u;
 
 Gsu = tf([b2_u,b1_u,b0_u],[a4_u,a3_u,a2_u,a1_u,a0_u]);
@@ -49,6 +50,5 @@ bode(G0P);
 
 % Reglerauslegung ergänzen
 sisotool(G0P)
-
 
 
