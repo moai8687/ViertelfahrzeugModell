@@ -22,16 +22,16 @@ d_s = 0.142*10^3*0.1;  % Dämpferkonstante d_s [Ns/m]
 %% Teilübertragungsfunktion aufstellen
 
 % Koeffizienten des Zählerpolynoms
-b2_u = ...;
-b1_u = ...;
-b0_u = ...;
+b2_u = m_u;
+b1_u = 0;
+b0_u = c_u;
 
 % Koeffizienten des Nennerpolynoms
-a4_u = ...;
-a3_u = ...;
-a2_u = ...;
-a1_u = ...;
-a0_u = ...;
+a4_u = m_u*m_s;
+a3_u = (m_u+m_s)*d_s;
+a2_u = m_s*(c_s+c_u);
+a1_u = d_s*(c_u-c_s);
+a0_u = c_s*c_u;
 
 Gsu = tf([b2_u,b1_u,b0_u],[a4_u,a3_u,a2_u,a1_u,a0_u]);
 
@@ -47,7 +47,8 @@ G0P = Gsu*Gr_P;
 figure(1)
 bode(G0P);
 
-% Reglerauslegung ergänzen...
+% Reglerauslegung ergänzen
+sisotool(G0P)
 
 
 
