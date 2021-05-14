@@ -49,6 +49,30 @@ figure(1)
 bode(G0P);
 
 % Reglerauslegung ergänzen
-sisotool(G0P)
+% Aufagbe 7
+G0P1 = Gsu*db2mag(43.5)
+bode(G0P1)
+margin(G0P1)
+
+%% Aufgabe 8
+pzmap(Gsu)
+
+K_p = 1;
+s = tf('s');
+R_3 = K_p*33.67*(1/33.67*s^2 +  2.211/33.67*s+1)/( 2.211/33.67*s);
+pzmap(G0R3)
+bode(Gsu*R_3)
+% sisotool(G0R3)
+
+K_p = db2mag(32.5);
+s = tf('s');
+R_3 = K_p*33.67*(1/33.67*s^2 +  2.211/33.67*s+1)/( 2.211/33.67*s);
+
+figure()
+bode(Gsu*R_3)
+GgR3 = feedback(Gsu*R_3,1);
+step(GgR3)
+
+
 
 
