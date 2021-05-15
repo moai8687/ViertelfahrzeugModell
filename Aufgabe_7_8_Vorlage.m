@@ -60,7 +60,7 @@ pzmap(Gsu)
 K_p = 1;
 s = tf('s');
 R_3 = K_p*33.67*(1/33.67*s^2 +  2.211/33.67*s+1)/( 2.211/33.67*s);
-pzmap(G0R3)
+% pzmap(G0*R3)
 bode(Gsu*R_3)
 % sisotool(G0R3)
 

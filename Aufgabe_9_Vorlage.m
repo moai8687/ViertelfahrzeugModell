@@ -61,4 +61,4 @@ Gsz = tf([b1_z,b0_z],[a4_z,a3_z,a2_z,a1_z,a0_z]);
 %--------------------------------------------
 % Reglerauslegung mit dem SISO-Tool
 sisotool(Gsu,1,1,Gsz);
-sisotool(Gsz)
+% sisotool(Gsz)
