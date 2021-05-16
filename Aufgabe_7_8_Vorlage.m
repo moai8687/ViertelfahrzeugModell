@@ -25,7 +25,7 @@ d_s = 0.142*10^3*0.1;  % Dämpferkonstante d_s [Ns/m]
 % Koeffizienten des Zählerpolynoms
 b2_u = m_u;
 b1_u = 0;
-b0_u = c_u;
+b0_u = c_u; 
 
 % Koeffizienten des Nennerpolynoms
 a4_u = m_u*m_s;

@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "14.6"
+    ComputedModelVersion    "14.7"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -120,7 +120,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [1912.0, -8.0, 1936.0, 1096.0]
+      Location		      [-1928.0, -8.0, 1936.0, 1096.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -170,19 +170,6 @@ Model {
 	Dimension		2
 	Object {
 	  $ObjectID		  7
-	  Type			  "GLUE2:PropertyInspector"
-	  ID			  "Property Inspector"
-	  Visible		  [0]
-	  CreateCallback	  ""
-	  UserData		  ""
-	  Floating		  [0]
-	  DockPosition		  "Right"
-	  Width			  [640]
-	  Height		  [480]
-	  Minimized		  "Unset"
-	}
-	Object {
-	  $ObjectID		  8
 	  Type			  "Simulink:Editor:ReferencedFiles"
 	  ID			  "Referenced Files"
 	  Visible		  [0]
@@ -190,6 +177,19 @@ Model {
 	  UserData		  "{\"filterShowRefModels\":\"true\",\"filterShowRefSubs\":\"true\",\"filterShowOnlyDirtyFiles\":\"false\"}\n"
 	  Floating		  [0]
 	  DockPosition		  "Left"
+	  Width			  [640]
+	  Height		  [480]
+	  Minimized		  "Unset"
+	}
+	Object {
+	  $ObjectID		  8
+	  Type			  "GLUE2:PropertyInspector"
+	  ID			  "Property Inspector"
+	  Visible		  [0]
+	  CreateCallback	  ""
+	  UserData		  ""
+	  Floating		  [0]
+	  DockPosition		  "Right"
 	  Width			  [640]
 	  Height		  [480]
 	  Minimized		  "Unset"
@@ -220,9 +220,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Qigang Wang"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sun May 16 10:49:53 2021"
-  RTWModifiedTimeStamp	  543025100
-  ModelVersionFormat	  "%<AutoIncrement:14.6>"
+  LastModifiedDate	  "Sun May 16 14:14:48 2021"
+  RTWModifiedTimeStamp	  543071568
+  ModelVersionFormat	  "%<AutoIncrement:14.7>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -1396,7 +1396,7 @@ Model {
   }
   System {
     Name		    "Aufgabe_6_Vorlage"
-    Location		    [1912, -8, 3848, 1088]
+    Location		    [-1928, -8, 8, 1088]
     SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
     Open		    on
     PortBlocksUseCompactNotation off
@@ -2305,22 +2305,21 @@ Model {
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
       "ources','WiredSimulink',true,'DataLoggingSaveFormat','StructureWithTime','DataLoggingDecimation','1','DataLoggin"
       "gDecimateData',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal"
-      "','-2.74917','MaxYLimReal','3.1531','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','3.1531','LegendVisibili"
+      "','-0.027','MaxYLimReal','0.02977','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.02977','LegendVisibili"
       "ty','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0"
       ".686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;"
       "1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0."
       "274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LineP"
       "ropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',3,'LineNames',{{'Viertelfahrzeug/z_s','Viertelfah"
-      "rzeug/z_u','Anregung'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-2.74"
-      "917','MaxYLimReal','3.1531','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','3.1531','LegendVisibility','On'"
+      "rzeug/z_u','Anregung'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.02"
+      "7','MaxYLimReal','0.02977','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.02977','LegendVisibility','On'"
       ",'XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.6862745"
       "09803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.4117"
       "64705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.27450980"
       "3921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertie"
       "sCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),e"
       "xtmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configura"
-      "tion('Tools','Measurements',true,'Version','2021a')),'Version','2021a','Location',[1 77 1921 1079],'VisibleAtMod"
-      "elOpen','on')"
+      "tion('Tools','Measurements',true,'Version','2021a')),'Version','2021a','Location',[1 77 1921 1079])"
       NumInputPorts	      "1"
       Floating		      off
     }
@@ -2342,6 +2341,7 @@ Model {
       SID		      "433"
       Position		      [-320, 200, -290, 230]
       ZOrder		      514
+      After		      "0"
       SampleTime	      "0"
     }
     Block {
@@ -2430,7 +2430,7 @@ Model {
       RequestExecContextInheritance off
       System {
 	Name			"Viertelfahrzeug"
-	Location		[1874, 175, 3419, 1271]
+	Location		[1912, -8, 3848, 1088]
 	SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
 	Open			on
 	PortBlocksUseCompactNotation off
